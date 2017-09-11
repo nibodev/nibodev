@@ -74,3 +74,8 @@ kramdown:
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
+
+  # Sass
+sass:
+  style: compressed
+  sass_dir: _sass
