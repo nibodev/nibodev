@@ -1,0 +1,417 @@
+.header {
+    background-image: url("/images/background-pattern.png");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    & .logo-box {
+        margin-left: 30px;
+        width: 120px;
+        padding: 12px;
+        background-color: white;
+        & img {
+            width: 100%;
+        }
+    }
+    & .skills-tree {
+        &-container {
+            position: relative;
+            width: 100%;
+            height: 75vh;
+            margin-top: 30px; // background: rgba(255, 255, 255, 0.02);
+        }
+        &-nibo {
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            background-color: white;
+            width: 20vh;
+            height: auto;
+            z-index: 2;
+            border-radius: 50%;
+            padding: 20px;
+            & img {
+                width: 100%;
+            }
+        }
+        &-unit {
+            position: absolute;
+            background-color: white;
+            width: 11vh;
+            height: 11vh;
+            border-radius: 50%;
+            padding: 13px;
+            z-index: 2;
+            overflow: hidden;
+            & img {
+                width: 100%;
+            }
+        }
+        &-unit-large {
+            position: absolute;
+            background-color: white;
+            width: 13vh;
+            height: 13vh;
+            z-index: 2;
+            border-radius: 50%;
+            padding: 18px;
+            & img {
+                width: 100%;
+            }
+        }
+        &-unit-small {
+            position: absolute;
+            background-color: white;
+            z-index: 1;
+            width: 5vh;
+            height: 5vh;
+            border-radius: 50%;
+            &-0 {
+                top: 59%;
+                left: 28%;
+            }
+            &-1 {
+                top: 27%;
+                left: 36%;
+            }
+            &-2 {
+                top: 74%;
+                left: 46%;
+            }
+            &-3 {
+                top: 18%;
+                left: 59%;
+            }
+            &-4 {
+                top: 57%;
+                left: 59%;
+            }
+            &-5 {
+                top: 40%;
+                left: 66%;
+            }
+            &-6 {
+                top: 36%;
+                left: 20%;
+            }
+        }
+        &-vscode {
+            top: 59%;
+            left: 21%;
+        }
+        &-visual {
+            top: 6%;
+            left: 58%;
+        }
+        &-slack {
+            top: 17%;
+            left: 31%;
+        }
+        &-raygun {
+            top: 77%;
+            left: 43%;
+        }
+        &-git {
+            top: 57%;
+            left: 60%;
+        }
+        &-sql {
+            top: 32%;
+            left: 68%;
+        }
+        &-postman {
+            top: 28%;
+            left: 10%;
+        }
+    }
+}
+
+.diagonal {
+    position: absolute;
+    border-top: 5px solid white;
+    &-0 {
+        width: 15%;
+        -webkit-transform: rotate(36deg);
+        -moz-transform: rotate(36deg);
+        -o-transform: rotate(36deg);
+        -ms-transform: rotate(36deg);
+        transform: rotate(36deg);
+        top: 53%;
+        left: 46%;
+    }
+    &-1 {
+        width: 22%;
+        -webkit-transform: rotate(36deg);
+        -moz-transform: rotate(36deg);
+        -o-transform: rotate(36deg);
+        -ms-transform: rotate(36deg);
+        transform: rotate(-11deg);
+        top: 45%;
+        left: 46%;
+    }
+    &-2 {
+        width: 28%;
+        -webkit-transform: rotate(36deg);
+        -moz-transform: rotate(36deg);
+        -o-transform: rotate(36deg);
+        -ms-transform: rotate(36deg);
+        transform: rotate(-57deg);
+        top: 35%;
+        left: 40%;
+    }
+    &-3 {
+        width: 16%;
+        -webkit-transform: rotate(36deg);
+        -moz-transform: rotate(36deg);
+        -o-transform: rotate(36deg);
+        -ms-transform: rotate(36deg);
+        transform: rotate(-115deg);
+        top: 39%;
+        left: 33.5%;
+    }
+    &-4 {
+        width: 23%;
+        -webkit-transform: rotate(36deg);
+        -moz-transform: rotate(36deg);
+        -o-transform: rotate(36deg);
+        -ms-transform: rotate(36deg);
+        transform: rotate(16deg);
+        top: 44%;
+        left: 24%;
+    }
+    &-5 {
+        width: 18%;
+        -webkit-transform: rotate(36deg);
+        -moz-transform: rotate(36deg);
+        -o-transform: rotate(36deg);
+        -ms-transform: rotate(36deg);
+        transform: rotate(-38deg);
+        top: 61%;
+        left: 23%;
+    }
+    &-6 {
+        width: 26%;
+        -webkit-transform: rotate(36deg);
+        -moz-transform: rotate(36deg);
+        -o-transform: rotate(36deg);
+        -ms-transform: rotate(36deg);
+        transform: rotate(81.5deg);
+        top: 61%;
+        left: 34%;
+    }
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.header p.header-desc {
+    margin-bottom: -4px;
+}
+
+.header p span {
+    font-size: 30px;
+}
+
+.header-title {
+    margin-top: 180px;
+    margin-bottom: 120px;
+}
+
+.header .action-button {
+    width: 130px;
+    height: 42px;
+    background-color: #4CA2E8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.section-big-header {
+    margin-bottom: 60px;
+}
+
+h1.heading-way {
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+
+h2.heading-way {
+    font-size: 21px;
+}
+
+.our-way {
+    font-size: 12px;
+}
+
+p.our-way {
+    margin-bottom: 60px;
+}
+
+.section-stack {
+    height: 300px;
+    font-size: 0;
+    margin-bottom: 60px;
+}
+
+.about-left {
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+
+.text-up {
+    height: 150px;
+    border-bottom: solid 1px #474955;
+    font-size: 21px;
+    padding: 30px;
+}
+
+.text-down {
+    height: 149px;
+    font-size: 21px;
+    padding: 30px;
+}
+
+.stack-middle {
+    width: 300px;
+    height: 100%;
+    border: solid 1px #474955;
+    border-right: none;
+    border-radius: 50% 0 0 50%;
+    display: inline-block;
+}
+
+.stack-right {
+    position: relative;
+    width: calc(50% - 300px);
+    height: 100%;
+    border: solid 1px #474955;
+    border-right: none;
+    border-left: none;
+    display: inline-block;
+}
+
+.stack-skill {
+    position: absolute;
+    &-1 {
+        top: 0;
+        left: 5%;
+    }
+    &-2 {
+        top: 0;
+        left: 5%;
+    }
+    &-3 {
+        top: 0;
+        left: 5%;
+    }
+    &-4 {
+        top: 0;
+        left: 5%;
+    }
+    &-5 {
+        top: 0;
+        left: 5%;
+    }
+    &-6 {
+        top: 0;
+        left: 5%;
+    }
+    &-7 {
+        top: 0;
+        left: 5%;
+    }
+}
+
+.section-big-header img {
+    height: 80px;
+}
+
+.section-open-jobs {
+    .row {
+        background-color: #454752;
+    }
+    .section-team-jobs {
+        padding-bottom: 15px;
+    }
+    margin-bottom: 60px;
+    h2 {
+        font-size: 36px;
+        font-weight: 100;
+    }
+    hr {
+        border-color: #474955;
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 100;
+        margin-bottom: 45px;
+    }
+    .section-team-job {
+        background-color: #454752;
+        padding: 30px;
+        padding-bottom: 45px;
+        border: solid 2px #373842;
+        border-right: none;
+        cursor: pointer;
+    }
+    .section-team-job:last-child {
+        border-right: solid 2px #373842;
+    }
+    .job-title {
+        margin-top: 30px;
+        display: block;
+    }
+    .job-requirements {
+        padding: 15px;
+        h4 {
+            font-size: 24px;
+            font-weight: 100;
+            margin-bottom: 15px;
+        }
+        .job-requirement-topic {
+            font-size: 12px;
+            margin: 0 0 15px 15px;
+            border-left: solid 1px #6A6A6A;
+            padding-left: 10px;
+        }
+    }
+}
+
+.section-team {
+    margin-bottom: 60px;
+    h2 {
+        font-size: 36px;
+        font-weight: 100;
+    }
+    hr {
+        border-color: #474955;
+        width: 120px;
+        margin-bottom: 45px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 100;
+    }
+    .team-photo {
+        border-right: 4px solid $body-bg;
+        border-bottom: 4px solid $body-bg;
+        overflow: hidden;
+        height: 24vh;
+        background-size: cover;
+        background-image: url(/images/Aloysio-site.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .team-photo:last-child {
+        border-right: none;
+    }
+}
