@@ -1,0 +1,250 @@
+body 
+  background: $body-bg
+  color: $default-text-color
+  font-family: $default-font-family
+
+@media (min-width: 1200px)
+  .container
+    max-width: 1220px
+
+.btn
+  &.btn-primary
+    background-color: #4CA2E8
+    color: white
+    border: none
+    border-radius: 5px
+    font-size: 14px
+    padding: 12px 30px
+
+    &:hover
+      background-color: darken(#4CA2E8, 10%)
+
+.typed-cursor
+  animation: blinker 1000ms linear infinite
+
+@keyframes blinker
+  0%
+    opacity: 0
+
+  49%
+    opacity: 0
+
+  50% 
+    opacity: 1
+
+  99%
+    opacity: 1
+
+  100%
+    opacity: 0
+
+
+
+
+//Header
+//============================
+.header
+  .logo-box
+    position: absolute
+    top: 0
+    margin-left: 30px
+    width: 120px
+    padding: 12px
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.3)
+    background:  linear-gradient(to bottom, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%)
+
+  img
+    width: 100%
+
+//Section Work Here
+//============================
+.section-work-here
+  background: url("/images/background-pattern.png") repeat left top
+  margin-top: 30px
+  height: 675px
+
+  h1
+    font-size: 36px
+
+  p
+    font-size: 20px
+
+    span
+      font-size: 30px
+
+  .header-title
+    
+    margin-top: 165px
+    margin-bottom: 125px
+
+//Section Nibo Way
+//============================
+.section-big-header
+  margin: 100px 0 60px 0
+
+h1.heading-way
+  text-align: center
+  font-weight: 100
+  margin-bottom: 60px
+
+h2.heading-way
+  font-size: 21px
+
+.our-way
+  font-size: 12px
+
+p.our-way
+  margin-bottom: 60px
+
+.section-stack
+  height: 300px
+  font-size: 0
+  margin-bottom: 60px
+
+.about-left
+  width: 50%
+  height: 300px
+  float: left
+
+.text-up
+  height: 150px
+  border-bottom: solid 1px #474955
+  font-size: 21px
+  padding: 30px
+
+.text-down
+  height: 149px
+  font-size: 21px
+  padding: 30px
+
+.stack-middle
+  width: 300px
+  height: 100%
+  border: solid 1px #474955
+  border-right: none
+  border-radius: 50% 0 0 50%
+  display: inline-block
+
+.stack-right
+  position: relative
+  width: calc(50% - 300px)
+  height: 100%
+  border: solid 1px #474955
+  border-right: none
+  border-left: none
+  display: inline-block
+
+.stack-skill
+  position: absolute
+
+  &-1
+    top: 0
+    left: 5%
+
+  &-2
+    top: 0
+    left: 5%
+
+  &-3
+    top: 0
+    left: 5%
+
+  &-4
+    top: 0
+    left: 5%
+
+  &-5
+    top: 0
+    left: 5%
+
+  &-6
+    top: 0
+    left: 5%
+
+  &-7
+    top: 0
+    left: 5%
+
+.section-big-header img
+  height: 80px
+
+.section-open-jobs
+  .row
+    background-color: #454752
+
+  .section-team-jobs
+    padding-bottom: 15px
+
+  margin-bottom: 60px
+
+  h2
+    font-size: 36px
+    font-weight: 100
+
+  hr
+    border-color: #474955
+    width: 120px
+    margin-bottom: 10px
+
+  h3
+    font-size: 24px
+    font-weight: 100
+    margin-bottom: 45px
+
+  .section-team-job
+    background-color: #454752
+    padding: 30px
+    padding-bottom: 45px
+    border: solid 2px #373842
+    border-right: none
+    cursor: pointer
+
+  .section-team-job:last-child
+    border-right: solid 2px #373842
+
+  .job-title
+    margin-top: 30px
+    display: block
+
+  .job-requirements
+    padding: 15px
+
+    h4
+      font-size: 24px
+      font-weight: 100
+      margin-bottom: 15px
+
+    .job-requirement-topic
+      font-size: 12px
+      margin: 0 0 15px 15px
+      border-left: solid 1px #6A6A6A
+      padding-left: 10px
+
+.section-team
+  margin-bottom: 60px
+
+  h2
+    font-size: 36px
+    font-weight: 100
+
+  hr
+    border-color: #474955
+    width: 120px
+    margin-bottom: 45px
+
+  h3
+    font-size: 24px
+    font-weight: 100
+
+  .team-photo
+    border-right: 4px solid $body-bg
+    border-bottom: 4px solid $body-bg
+    overflow: hidden
+    height: 24vh
+    background-size: cover
+    background-image: url(/images/Aloysio-site.jpg)
+    background-repeat: no-repeat
+    background-position: center center
+
+  .team-photo:last-child
+    border-right: none
