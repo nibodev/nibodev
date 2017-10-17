@@ -263,6 +263,8 @@ h4
 //Section Open Jobs
 //============================
 .section-open-jobs
+  margin: 0 0 100px 0
+
   &-menu
     background: $secondary-color
 
@@ -310,32 +312,24 @@ h4
 
 //Section workplace
 //============================
-
-.section-team
+.section-workplace
   margin-bottom: 60px
 
-  h2
-    font-size: 36px
-    font-weight: 100
-
-  hr
-    border-color: #474955
-    width: 120px
-    margin-bottom: 45px
-
-  h3
-    font-size: 24px
-    font-weight: 100
-
-  .team-photo
+  &-photo
     border-right: 4px solid $body-bg
     border-bottom: 4px solid $body-bg
     overflow: hidden
-    height: 24vh
+    height: 250px
     background-size: cover
-    background-image: url(/images/Aloysio-site.jpg)
     background-repeat: no-repeat
-    background-position: center center
+    background-position: center 40%
 
-  .team-photo:last-child
-    border-right: none
+    &:last-child
+      border-right: none
+
+    &:hover
+      opacity: 0.8
+
+    @for $i from 1 through 8
+      &-#{$i}
+        background-image: url("/images/workplace/nibo-workplace-#{$i}.jpg")
