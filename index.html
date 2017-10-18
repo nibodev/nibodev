@@ -5,7 +5,7 @@ layout: default
 <section class="section-work-here">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 d-none d-xl-block">
                 <div class="skills-tree-container">
                     <div class="skills-tree-nibo">
                         <img src="/images/logo-nibo-circle.png" alt="">
@@ -183,7 +183,7 @@ layout: default
     <nav class="section-open-jobs-menu">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 section-open-jobs-menu-item section-open-jobs-menu-item-selected">
+                <div class="col-md-4 section-open-jobs-menu-item">
                     <a class="section-open-jobs-menu-item-link" href="#job-csharp-developer">
                         <img src="/images/knives-icon.png" alt="" class="job-icon">
                         <h3>C# .NET Developer</h3>
@@ -208,6 +208,8 @@ layout: default
     <div class="open-job-descriptions">
         <div class="container">
             {% include jobs/csharp-developer.html %}
+            {% include jobs/front-end-developer.html %}
+            {% include jobs/ui.html %}
         </div>
     </div>
 </section>
