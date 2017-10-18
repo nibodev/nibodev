@@ -6,11 +6,6 @@ body
   color: $default-text-color
   font-family: $default-font-family
   font-size: $default-text-size
-
-@media (min-width: 1200px)
-  .container
-    max-width: $container-width
-
 a
   color: white
 
@@ -67,15 +62,23 @@ h5
   0%
     height: 33px
   
-  50%
-    height: 43px
+  32%
+    height: 33px
 
-  100%
+  33%
+    height: 44px
+
+  65%
+    height: 44px
+
+  66%
     height: 53px  
+
+  99%
+    height: 53px
 
 //Sections
 //============================
-
 .section-title
   text-align: center
   font-weight: 300
@@ -95,7 +98,6 @@ h5
     position: absolute
     top: 10px
     left: calc(50% - 50px)
-
 
 //Header
 //============================
@@ -117,7 +119,7 @@ h5
 .section-work-here
   background: url("/images/background-pattern.png") repeat left top
   margin-top: 30px
-  height: 675px
+  height: 625px
 
   h1
     font-size: 36px
@@ -134,12 +136,13 @@ h5
 
   .scroll-down-indicator
     background: url("/images/scroll-down.png") no-repeat left top
+    //animation: scrollDownIndicator 3000ms linear infinite
     position:  absolute
     margin-left: -10px
     left: 50%
     width: 20px
     height: 53px
-    top: 640px
+    top: 585px
 
 //Section Nibo Way
 //============================
@@ -366,3 +369,52 @@ h5
     @for $i from 1 through 8
       &-#{$i}
         background-image: url("/images/workplace/nibo-workplace-#{$i}.jpg")
+
+//Responsive
+//============================
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 768px)
+  h1
+    font-size: 38px
+
+  .section-work-here 
+    .header-title
+      margin: 65px auto 175px auto
+      text-align: center
+      height: 78px
+      width: 340px
+
+  .section-our-way
+    margin-top: 50px
+    margin-bottom: -20px
+
+    .our-way-text-block
+      margin-bottom: 30px
+
+    img
+      margin-bottom: 30px
+
+    div.text-right
+      text-align: left !important
+
+  .section-stack
+    margin-bottom: 50px
+    
+    &-text
+      &:before
+        display: none
+
+
+
+
+@media (min-width: 1200px)
+  .container
+    max-width: $container-width
+
+@media (min-height: 700px)
+  .section-work-here
+    text-align: center
+
+    .scroll-down-indicator
+      top: 560px
+      display: none
