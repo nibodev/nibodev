@@ -306,6 +306,7 @@ h5
       height: 200px
       border-left: 2px solid $body-bg
       text-align: center
+      position: relative
 
       &:first-child
         border-left: none
@@ -313,18 +314,25 @@ h5
       &-selected
         .section-open-jobs-menu-item-link
           background: $secondary-inverted-color
+
+      &-title
+        position: absolute
+        width: 100%
+        text-align: center
+        top: 130px
     
       &-link
         display: block
         height: 100%
         padding-top: 35px
         margin: 0 -15px
+        text-align: center
 
         &:hover
           background: $secondary-inverted-color
 
         img
-          margin-bottom: 15px
+          
 
   .open-job-descriptions
     background: $secondary-color
