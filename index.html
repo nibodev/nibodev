@@ -184,30 +184,36 @@ layout: default
     <nav class="section-open-jobs-menu">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 section-open-jobs-menu-item">
+                <div class="col-sm section-open-jobs-menu-item">
                         <a class="section-open-jobs-menu-item-link" href="#job-devops">
                             <img src="/images/gears-icon.png" alt="" class="job-icon">
-                            <h3 class="section-open-jobs-menu-item-title">DevOps</h3>
+                            <h4 class="section-open-jobs-menu-item-title">DevOps</h4>
                         </a>
                     </div>
-                <div class="col-md-3 section-open-jobs-menu-item">
+                <div class="col-sm section-open-jobs-menu-item">
                     <a class="section-open-jobs-menu-item-link" href="#job-csharp-developer">
                         <img src="/images/code-icon.png" alt="" class="job-icon">
-                        <h3 class="section-open-jobs-menu-item-title">C# .NET Developer</h3>
+                        <h4 class="section-open-jobs-menu-item-title">C# .NET Developer</h4>
                     </a>
                 </div>
-                <div class="col-md-3 section-open-jobs-menu-item">
+                <div class="col-sm section-open-jobs-menu-item">
+                    <a class="section-open-jobs-menu-item-link" href="#job-dba">
+                        <img src="/images/database-icon.png" alt="" class="job-icon">
+                        <h4 class="section-open-jobs-menu-item-title">DBA</h4>
+                    </a>
+                </div>
+                <div class="col-sm section-open-jobs-menu-item">
                     <a class="section-open-jobs-menu-item-link" href="#job-front-end">
                         <img src="/images/code-screen-icon.png" alt="" class="job-icon">
-                        <h3 class="section-open-jobs-menu-item-title">Front-end Developer</h3>
+                        <h4 class="section-open-jobs-menu-item-title">Front-end Developer</h4>
                     </a>
                 </div>
-                <div class="col-md-3 section-open-jobs-menu-item">
-                        <a class="section-open-jobs-menu-item-link" href="#job-ui">
-                            <img src="/images/layout-screen-icon.png" alt="" class="job-icon">
-                            <h3 class="section-open-jobs-menu-item-title">UI / UX</h3>
-                        </a>
-                    </div>
+                <div class="col-sm section-open-jobs-menu-item">
+                    <a class="section-open-jobs-menu-item-link" href="#job-ui">
+                        <img src="/images/layout-screen-icon.png" alt="" class="job-icon">
+                        <h4 class="section-open-jobs-menu-item-title">UI / UX</h4>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -215,6 +221,7 @@ layout: default
     <div class="open-job-descriptions">
         <div class="container">
             {% include jobs/devops.html %}
+            {% include jobs/dba.html %}
             {% include jobs/csharp-developer.html %}
             {% include jobs/front-end-developer.html %}
             {% include jobs/ui.html %}
