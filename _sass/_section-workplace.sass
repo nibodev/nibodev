@@ -1,0 +1,23 @@
+//Section workplace
+//============================
+.section-workplace
+  margin-bottom: 60px
+
+  &-photo
+    border-right: 4px solid $body-bg
+    border-bottom: 4px solid $body-bg
+    overflow: hidden
+    height: 250px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center 40%
+
+    &:last-child
+      border-right: none
+
+    &:hover
+      opacity: 0.8
+
+    @for $i from 1 through 9
+      &-#{$i}
+        background-image: url("/images/workplace/nibo-workplace-#{$i}.jpg")

@@ -1,0 +1,57 @@
+//Section Open Jobs
+//============================
+.section-open-jobs
+  margin: 0 0 100px 0
+
+  &-menu
+    background: $secondary-color
+
+    &-item
+      height: 200px
+      border-left: 2px solid $body-bg
+      text-align: center
+      position: relative
+
+      &:first-child
+        border-left: none
+
+      &-selected
+        .section-open-jobs-menu-item-link
+          background: $secondary-inverted-color
+
+      &-title
+        position: absolute
+        width: 100%
+        text-align: center
+        top: 130px
+    
+      &-link
+        display: block
+        height: 100%
+        padding-top: 35px
+        margin: 0 -15px
+        text-align: center
+
+        &:hover
+          background: $secondary-inverted-color
+
+  .open-job-descriptions
+    background: $secondary-color
+    border-top: 2px solid $secondary-inverted-color
+
+  
+  .open-job-description
+    display: none
+
+    &-title
+      font-weight: 300
+      margin: 0 0 10px 0
+
+    &-block
+      padding: 15px
+
+    &-topic
+      margin: 0 0 15px 15px
+      border-left: solid 1px rgba(255,255,255,0.2)
+      padding-left: 10px
+      font-weight: 300

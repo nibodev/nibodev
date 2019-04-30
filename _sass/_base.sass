@@ -1,0 +1,115 @@
+html
+  overflow-x: hidden
+  
+body 
+  background: $body-bg
+  color: $default-text-color
+  font-family: $default-font-family
+  font-size: $default-text-size
+a
+  color: white
+
+  &:hover
+    color: rgba(255,255,255,0.8)
+    text-decoration: none
+
+.btn
+  &.btn-primary
+    background-color: $default-btn-color
+    color: white
+    border: none
+    border-radius: 5px
+    font-size: 14px
+    padding: 12px 30px
+
+    &:hover
+      background-color: darken($default-btn-color, 10%)
+h1
+  font-size: 48px
+
+h2
+  font-size: 36px
+
+h3
+  font-size: 24px
+
+h4
+  font-size: 21px
+  
+h5
+  font-size: 18px
+
+.typed-cursor
+  animation: blinker 1000ms linear infinite
+
+@keyframes blinker
+  0%
+    opacity: 0
+
+  49%
+    opacity: 0
+
+  50% 
+    opacity: 1
+
+  99%
+    opacity: 1
+
+  100%
+    opacity: 0
+
+@keyframes scrollDownIndicator
+  0%
+    height: 33px
+  
+  32%
+    height: 33px
+
+  33%
+    height: 44px
+
+  65%
+    height: 44px
+
+  66%
+    height: 53px  
+
+  99%
+    height: 53px
+
+//Sections
+//============================
+.section-title
+  text-align: center
+  font-weight: 300
+  margin-bottom: 60px
+
+.section-subtitle
+  text-align: center
+  font-weight: 300
+  position: relative
+  padding-top: 25px
+  margin: -55px 0 60px 0
+
+  &:before
+    content: ""
+    border-top: 1px solid rgba(255,255,255,0.1)
+    width: 100px
+    position: absolute
+    top: 10px
+    left: calc(50% - 50px)
+
+//Header
+//============================
+.header
+  .logo-box
+    position: absolute
+    top: 0
+    margin-left: 15px
+    width: 120px
+    padding: 12px
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.3)
+    background:  linear-gradient(to bottom, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%)
+
+  img
+    width: 100%

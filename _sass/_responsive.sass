@@ -1,0 +1,58 @@
+//Responsive
+//============================
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 992px)
+  h1
+    font-size: 38px
+
+  .section-work-here 
+    .header-title
+      margin: 65px auto 175px auto
+      text-align: center
+      height: 78px
+      width: 340px
+
+  .section-our-way
+    margin-top: 50px
+    margin-bottom: -20px
+
+    .our-way-text-block
+      margin-bottom: 30px
+
+    img
+      margin-bottom: 30px
+
+    div.text-right
+      text-align: left !important
+
+  .section-stack
+    margin-bottom: 50px
+    
+    &-text
+      &:before
+        display: none
+
+  .section-open-jobs
+    &-menu
+        &-item
+          height: auto
+
+          &-link
+            padding-top: 10px
+            padding-bottom: 10px
+
+          &-title
+            position: relative
+            top: auto
+
+          img
+            display: none
+
+@media (min-width: 1200px)
+  .container
+    max-width: $container-width
+
+@media (min-height: 700px)
+  .scroll-down-indicator
+    top: 560px
+    display: none!important
