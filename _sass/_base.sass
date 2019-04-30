@@ -14,16 +14,26 @@ a
     text-decoration: none
 
 .btn
+  border-radius: 5px
+  font-size: 14px
+  padding: 12px 30px
+  border: none
+
   &.btn-primary
     background-color: $default-btn-color
     color: white
-    border: none
-    border-radius: 5px
-    font-size: 14px
-    padding: 12px 30px
 
     &:hover
       background-color: darken($default-btn-color, 10%)
+
+  &.btn-secondary
+    font-size: 12px
+    background: white
+    color: $theme-base
+    font-weight: 600
+
+    &:hover
+      background-color: $default-text-color
 h1
   font-size: 48px
 
